@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import '../styles/reset.css'
+import { Link } from 'react-router-dom'
 
 function Resetpass() {
     const [user,setUser] = useState({
@@ -23,7 +25,7 @@ function Resetpass() {
         }
     }
   return (
-    <div>
+    <div className='text-center'>
         <form>
             <div>
                 <label>Email</label>
@@ -34,9 +36,11 @@ function Resetpass() {
                 type='email'
                 placeholder='Enter your email'
                  />
-                 <button onClick={reset}>Sent email</button>
             </div>
-            <button>Home</button>
+            <button className='btn btn-md mx-3 btn-success' onClick={reset}>Sent email</button>
+            <Link to ='/'>
+            <button className='btn btn-md btn-danger'>Home</button>
+            </Link>
         </form>
     </div>
   )
