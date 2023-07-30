@@ -1,0 +1,9 @@
+a {
+    color: red;
+}
+
+hr {
+    color: azure;
+    border-width: 5px;
+    border-style: double;
+}
