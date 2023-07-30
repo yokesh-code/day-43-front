@@ -37,7 +37,9 @@ function Resetpass() {
                 placeholder='Enter your email'
                  />
             </div>
+            <Link to ='/otp-reset'>
             <button className='btn btn-md mx-3 btn-success' onClick={reset}>Sent email</button>
+            </Link>
             <Link to ='/'>
             <button className='btn btn-md btn-danger'>Home</button>
             </Link>

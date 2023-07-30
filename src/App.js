@@ -4,6 +4,7 @@ import LoginPage from './components/LoginPage'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Resetpass from './components/Resetpass'
+import Success from './components/Success'
 
 function App() {
   const [user,setLoginUser]=useState({
@@ -16,6 +17,8 @@ function App() {
     <Route path ='/login' element={<LoginPage />} />
     <Route path ='/register' element={<RegisterPage />} />
     <Route path = '/reset' element={<Resetpass />} />
+    <Route path = '/otp-reset' element={<Success />} />
+
   </Routes>
 </div>
 )
